@@ -1,0 +1,29 @@
+/*Contact*/
+
+.form{
+    margin:3rem auto;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+}
+
+#contactImg {
+    display: flex;
+    width: 200px; 
+    height: 200px;
+}
+
+#contactImg:hover {
+    transform: skew(20deg);
+}

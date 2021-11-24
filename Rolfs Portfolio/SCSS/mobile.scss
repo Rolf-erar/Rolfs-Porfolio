@@ -1,0 +1,24 @@
+/*Mobile-first*/
+
+@media (max-width: 480px) {
+    #mainText {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #mainText {
+        padding-top: 2rem;
+    }
+    #contactImg {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #mainText {
+        padding-right: 450px;
+        padding-top: 3rem;
+    }
+    
+}

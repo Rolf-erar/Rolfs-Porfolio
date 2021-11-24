@@ -1,0 +1,18 @@
+footer  {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: center;
+    background-color: rgba(245, 248, 250, 0.5);
+    right: 0;
+    left: 0;
+    height: 50px;
+}  
+.socials  {
+    justify-content: space-between;
+    text-align: end;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+}

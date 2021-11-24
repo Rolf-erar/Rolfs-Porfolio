@@ -1,0 +1,21 @@
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 50px;
+    gap: 1rem;
+        .imgTest {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+                img {
+                    width: 450px;
+                    height: 300px;
+                }
+                    img:hover {
+                    transform: scale(1.3);
+                    transition: 0.8s;
+                }
+            }
+        }
