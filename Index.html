@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolf P | Rolf's portfolio</title>
+    <title>RP | Rolf's portfolio</title>
     
-    <!--Estilos-->
+    <!--Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="CSS/styles2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,49 +26,153 @@
     <meta property="og:title" content="RP | Rolf's portfolio"/>
     <meta property="og:description" content="Rolf's Portfolio - Independent designer & financial advisor - Product design | Desktop Design | Web Design"/>
     <meta property="og:image"  content=""/>
+
 </head>
 
 <body>
-    <div class="containerMain">
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
 
     <!--Header-->  
-        <header>
-            <div class="indexLogo"><a href="Index.html"> <img src="Images/Logo2.png" alt="Rolf's portfolio" height="250px" width="250px"></a></div>
-            
+    <header>
         <!--Menu Nav-->                
-            <nav>
+        <nav>
+            <div class="Container">
+                <div class="logo"><a href="#"><span>R</span>olf's <span>P</span>ortfolio</a></div>
+                <div class="menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <ul class="navMenu">
+                    <li><a href="#aboutMe" > About me</a></li>
+                    <li><a href="#services" > Services</a></li>
                     <li><a href="Html/Portfolio.html"> Portfolio </a></li>
                     <li><a href="Html/Gallery.html"> Gallery </a></li>
-                    <li><a href="Html/About.html"> About me</a></li>
-                    <li><a href="Html/Contact.html"> Contact </a></li>
-                </ul> 
-            </nav>
-        </header>
+                    <li><a href="Html/Advisory.html"> Advisory </a></li>
+                    <li><a href="Html/Blog.html"> Blog </a></li>
+                    <li><a href="#contactForm"> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!--Body-->  
-        <main>
-            <div class="mainBody"> 
-                <div id="mainText">
-                    <article>
-                        <h1>Welcome to my Portfolio!</h1>
-                        <p>Thank you for coming by! Want to know more <a href="About.html">about me</a>? <br>
-                        Want to <a href="Contact.html">Contact me</a>? Just look around! <a href="Portfolio.html">Explore now!</a></p>
-                    </article>
+    <main class="home">
+        <div class="Container">
+            <article class="mainText">
+                <h1>Welcome to my Portfolio!</h1>
+                <p>Thank you for coming by! Want to know more <a href="#aboutMe">about me</a>? <br>
+                Want to <a href="#contactForm">Contact me</a>? Just look around! <a href="Portfolio.html">Explore now!</a></p>
+            </article>
+        </div>
+    </main>
+
+
+
+    <section class="aboutMe" id="aboutMe">
+        <div class="Container">
+            <article class="aboutText">
+                <div class="left_column">
+                    <img id="myPhoto" src="Images/ProfileFoto.jpeg" alt="MyPhoto">
                 </div>
-            </div>   
-        </main>
+                <div class="right_column">
+                    <h2>About me!</h2>
+                    <p>Hey! Let me tell you a bit about me! Born and raised in Argentina. CPA and a Business Administration Degree. 10 years of experience in Compliance, Internal Audits, and process analysis. Excel pro and looking forward on becoming one in Web development!</p><br>
+                    <p>Want to know more? Check my <a href="https://www.linkedin.com/in/rolf-arndt-33011aa0/" target="_blank">Linkedin</a> or <a href="https://github.com/Rolf-erar" target="_blank">Github</a> profiles!</p>
+                </div>
+            </article>    
+        </div>
+    </section>
 
-    <!--Footer-->           
-        <footer>
-            <div class="footerCopy">
-                <h3>Copyright © 2021 Rolf Arndt - All Right Reserved. </h3>
+    <section class="myServices" id="services">
+        <div class="Container">
+            <article class="servicesText">
+                <div class="left_column">
+                </div>
+                <div class="right_column">
+                    <h2>My Services</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis consequuntur eos veniam incidunt laboriosam, optio sapiente assumenda reiciendis inventore omnis animi, asperiores, maxime blanditiis vitae eius sed ullam culpa. Consectetur.</p>
+                </div>
+            </article>    
+        </div>
+    </section>
+
+    <!-- Contact form-->
+    <section class="contact" id="contactForm">
+        <h2 class="contact_title">Contact me!</h2>
+
+        <div class="Container">
+            <div class="contact-content">
+                <div class="column left">
+                        <div class="icons">
+
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Rolf Arndt</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Buenos Aires, Argentina</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d6c6f6e4d6a606c6461236e6260">[email&#160;protected]</a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
             </div>
-            <div class="socials">
-                    <a href="https://github.com/Rolf-erar" target="_blank"><img src="Images/Github Logo.png" alt="" width="30" height="30"></a>
-                    <a href="https://www.linkedin.com/in/rolf-arndt-33011aa0/" target="_blank"><img src="Images/Linkedin Logo.png" alt="" width="30" height="30"></a>
+
+            <div class="contact-content">
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                                
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                            
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                            
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                            
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->   
+    <footer>
+        <div class="footerCopy">
+            <h3>Copyright © 2021 Rolf Arndt - All Right Reserved. </h3>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

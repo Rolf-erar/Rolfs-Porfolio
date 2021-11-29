@@ -21,8 +21,14 @@
     width: 80%;
     text-align: center;
 }
+.accordion__title {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color:brown;
+}
 
-.lightbox_target {
+
+.accordion__lightbox--target {
     position: fixed;
     left: 0;
     right: 0;
@@ -48,7 +54,7 @@
         }
     }   
 
-a.lightbox_close {
+a.accordion__lightbox--close {
     display: block;
     width:50px;
     height:50px;
@@ -62,7 +68,7 @@ a.lightbox_close {
     transition: .5s ease-in-out;
 }
               
-a.lightbox_close:before {
+a.accordion__lightbox--close:before {
     content: "";
     display: block;
     height: 30px;
@@ -74,7 +80,7 @@ a.lightbox_close:before {
     transform:rotate(45deg);
 }
             
-a.lightbox_close:after {
+a.accordion__lightbox--close:after {
     content: "";
     display: block;
     height: 30px;
@@ -86,15 +92,37 @@ a.lightbox_close:after {
     transform:rotate(-45deg);
 }
           
-.lightbox_target:target {
+.accordion__lightbox--target:target {
     opacity: 1;
     top: 0;
     bottom: 0;
 }
-.lightbox_target:target img {
+.accordion__lightbox--target:target img {
     max-height: 100%;
     max-width: 100%;
 }
-.lightbox_target:target a.lightbox_close {
+.accordion__lightbox--target:target a.accordion__lightbox--close {
     top: 0;
 }
+
+
+@for $i from 1 through 4 {
+    .accordion__image_#{$i} {
+        width: 30px * $i !important;
+        height: auto;
+    }
+}
+
+$Colors: (
+    blue:rgb(173, 173, 250),
+    red:rgb(255, 140, 140),
+    green:rgb(174, 252, 174),
+    yellow:rgb(253, 253, 166),
+);
+
+@each $tab, $value in $Colors {
+    .#{$tab}_tab {
+        background-color: $value!important;
+    } 
+}
+

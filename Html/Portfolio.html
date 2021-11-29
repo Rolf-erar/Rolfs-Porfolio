@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolf's portfolio| Portfolio</title>
+    <title>RP| Portfolio</title>
     
-    <!--Estilos-->
+    <!--Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/styles2.css" />
     
     <!--Metas-->
@@ -22,34 +23,47 @@
 </head>
 
 <body>
-    <div class="containerMain">  
-    
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
     <!--Header-->  
     <header>
-        <div class="indexLogo"><a href="../Index.html"> <img src="../Images/Logo2.png" alt="Rolf's portfolio"></a></div>
-            
-        <!--Menu Nav-->        
+        <!--Menu Nav-->                
         <nav>
-            <ul class="navMenu">
-                <li><a href="Portfolio.html"> Portfolio </a></li>
-                <li><a href="Gallery.html"> Gallery </a></li>
-                <li><a href="About.html"> About me</a></li>
-                <li><a href="Contact.html"> Contact </a></li>
-            </ul> 
+            <div class="Container">
+                <div class="logo"><a href="../Index.html"><span>R</span>olf's <span>P</span>ortfolio</a></div>
+                <div class="menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navMenu">
+                    <li><a href="../Index.html #aboutMe"> About me </a></li>
+                    <li><a href="../Index.html #services"> Services </a></li>
+                    <li><a href="Portfolio.html"> Portfolio </a></li>
+                    <li><a href="Gallery.html"> Gallery </a></li>
+                    <li><a href="Advisory.html"> Advisory </a></li>
+                    <li><a href="Blog.html"> Blog </a></li>
+                    <li><a href="#contactForm"> Contact </a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
+
     <!--Body-->  
     <main>
-        <div class="accordion">
+        <!--
+                    <div class="accordion">
 
-        <!--Tab 1-->     
-            <h2>Travel planner template</h2>
+            <h2 class="accordion__title">Travel planner template</h2>
             
             <div class="accordion_tab">    
                 <div class="accordion_content">
                     <div class="accordion_text">
-                        <p>Ready to use template to help you plan your travels around the world. The template includes:
+                        <div class="blue_tab">
+                        <p class="accordion accordion_paragraph">Ready to use template to help you plan your travels around the world. The template includes:
                             <ul>
                                 <li>Budget planner;</li>
                                 <li>Budget control;</li>
@@ -61,27 +75,28 @@
                         <a href=""> Download Now! </a><br>
                         <br>
                         <a href=""> Watch tutorial! </a>
+                        </div>
                     </div>
                     
-                    <div class="accordion_image">
-                        <a class="lightbox_template" href="#Travel planner">
+                    <div class="accordion__image--1">
+                        <a class="accordion__lightbox--template" href="#Travel planner">
                             <img src="../Images/Template v0.png"/>
                         </a>
                         
-                        <div class="lightbox_target" id="Travel planner">
+                        <div class="accordion__lightbox--target" id="Travel planner">
                             <img src="../Images/Template v0.png"/>
-                            <a class="lightbox_close" href="#"></a>
+                            <a class="accordion__lightbox--close" href="#"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <!--Tab 2-->     
-            <h2>Personal Finance planner template</h2>
+            <h2 class="accordion__title">Personal Finance planner template</h2>
             
             <div class="accordion_tab">
                 <div class="accordion_content">
                     <div class="accordion_text">
+                        <div class="red_tab">
                         <p>Ready to use template to help you plan your personal finance on a daily, weekly or monthly basis. This template includes:
                             <ul>
                                 <li>Budget planner for all year;</li>
@@ -93,52 +108,54 @@
                         <a href=""> Download Now! </a><br>
                         <br>
                         <a href=""> Watch tutorial! </a>
+                        </div>
                     </div>
                     
-                    <div class="accordion_image">
-                        <a class="lightbox_template" href="#Personal Finance planner">
+                    <div class="accordion__image_2">
+                        <a class="accordion__lightbox--template" href="#Personal Finance planner">
                             <img src="../Images/Template 2.png"/>
                         </a>
                         
-                        <div class="lightbox_target" id="Personal Finance planner">
+                        <div class="accordion__lightbox--target" id="Personal Finance planner">
                             <img src="../Images/Template 2.png"/>
-                            <a class="lightbox_close" href="#"></a>
+                            <a class="accordion__lightbox--close" href="#"></a>
                         </div>
 
                     </div>
                 </div>
             </div>
 
-        <!--Tab 3-->     
-            <h2>Web design with cards</h2>
+            <h2 class="accordion__title">Web design with cards</h2>
             
             <div class="accordion_tab">    
                 <div class="accordion_content">
                     <div class="accordion_text">
+                        <div class="yellow_tab">
                         <p>Simple web design for news blog using a RPG card style for articles using HTML and CSS, including a zooming effect on hover.</p>
                         <a href=""> Download Now! </a><br>
                         <br>
                         <a href="https://www.youtube.com/embed/cwC1qdPWBKo"> Watch tutorial! </a>
+                        </div>
                     </div>
-                    <div class="accordion_image">
-                        <a class="lightbox_template" href="#Card Web design">
+                    <div class="accordion__image_3">
+                        <a class="accordion__lightbox--template" href="#Card Web design">
                             <img src="../Images/Template 3.png" alt="Web_design">
                         </a>
                         
-                        <div class="lightbox_target" id="Card Web design">
+                        <div class="accordion__lightbox--target" id="Card Web design">
                             <img src="../Images/Template 3.png"/>
-                            <a class="lightbox_close" href="#"></a>
+                            <a class="accordion__lightbox--close" href="#"></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        <!--Tab 4-->        
-            <h2>Minimalist Rainmeter skin</h2>
+              
+            <h2 class="accordion__title">Minimalist Rainmeter skin</h2>
             
             <div class="accordion_tab">    
                 <div class="accordion_content">
                     <div class="accordion_text">
+                        <div class="green_tab">
                         <p>Desktop design using <a href="https://www.rainmeter.net/">Rainmeter </a>. This skin includes:
                         </p>
                         <ul> 
@@ -152,37 +169,105 @@
                         <a href=""> How to install? </a><br>
                         <br>
                         <a href=""> Watch tutorial! </a>
+                        </div>
                     </div>
                     
-                    <div class="accordion_image">
-                        <a class="lightbox_template" href="#Minimalist skin">
+                    <div class="accordion__image_4">
+                        <a class="accordion__lightbox--template" href="#Minimalist skin">
                             <img src="../Images/Template 4.png" alt="Desktop_design">
                         </a>
                         
-                        <div class="lightbox_target" id="Minimalist skin">
+                        <div class="accordion__lightbox--target" id="Minimalist skin">
                             <img src="../Images/Template 4.png"/>
-                            <a class="lightbox_close" href="#"></a>
+                            <a class="accordion__lightbox--close" href="#"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        -->
 
     </main>
 
+
+    <!-- Contact form-->
+    <section class="contact" id="contactForm">
+        <h2 class="contact_title">Contact me!</h2>
+
+        <div class="Container">
+            <div class="contact-content">
+                <div class="column left">
+                        <div class="icons">
+
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Rolf Arndt</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Buenos Aires, Argentina</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d6c6f6e4d6a606c6461236e6260">[email&#160;protected]</a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                                
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                            
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                            
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                            
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Footer-->   
     <footer>
-        <h3>Copyright © 2021 Rolf Arndt - All Right Reserved. </h3>
-        <div class="socials">
-            <a href="https://github.com/Rolf-erar" target="_blank"><img src="../Images/Github Logo.png" alt="Git"></a>
-            <a href="https://www.linkedin.com/in/rolf-arndt-33011aa0/" target="_blank"><img src="../Images/Linkedin Logo.png" alt="LinkedIn"></a>
+        <div class="footerCopy">
+            <h3>Copyright © 2021 Rolf Arndt - All Right Reserved. </h3>
         </div>
     </footer>
-    </div>  
     
     <!--Scripts-->       
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="script.js"></script>
     <script>
     $( function() {
       $( ".accordion" ).accordion();
