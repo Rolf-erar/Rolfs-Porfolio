@@ -24,15 +24,13 @@
 }
 body {
     background-color: white;
+    width: 100%;
 }
 .home {
     display: flex;
     background: url(../Images/1668968.png) no-repeat center;
     height: 100vh;
     min-height: 500px;
-}
-main .Container {
-    margin: auto;    /* VER */
 }
 
 
@@ -53,7 +51,7 @@ main .Container {
 }
 
 
-/* About section */
+/* About */
 
 section {
     padding: 0;
@@ -87,6 +85,8 @@ section {
 }
 .myServices .Container {
     padding-top: 8rem;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 
