@@ -62,6 +62,7 @@ nav {
     pointer-events: none;
     transition: all 0.3s ease;
     border-radius: 50%;
+    opacity: 0;
 }
 .scroll-up-btn.show {
     bottom: 30px;
